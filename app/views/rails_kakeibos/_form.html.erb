@@ -1,0 +1,72 @@
+<h1>家計簿入力画面</h1>
+
+<%= form_with model: @rails_kakeibo, local: true do |form| %>
+  <div>
+    <%= form.label :date %>
+    <%= form.date_field :date %>
+  </div>
+
+  <div>
+    <%= form.label :gougin_salary %>
+    <%= form.number_field :gougin_salary %>
+  </div>
+
+  <div>
+    <%= form.label :rent %>
+    <%= form.number_field :rent %>
+  </div>
+
+  <div>
+    <%= form.label :sbi_stock %>
+    <%= form.number_field :sbi_stock %>
+  </div>
+
+  <div>
+    <%= form.label :jcb_card %>
+    <%= form.number_field :jcb_card %>
+  </div>
+
+  <div>
+    <%= form.label :gasoline %>
+    <%= form.number_field :gasoline %>
+  </div>
+
+  <div>
+    <%= form.label :cash %>
+    <%= form.number_field :cash %>
+  </div>
+
+  <div>
+    <%= form.label :others %>
+    <%= form.number_field :others %>
+  </div>
+
+  <div>
+    <%= form.label :rakuten_salary %>
+    <%= form.number_field :rakuten_salary %>
+  </div>
+
+  <div>
+    <%= form.label :ideco_stock %>
+    <%= form.number_field :ideco_stock %>
+  </div>
+
+  <div>
+    <%= form.label :nisa_stock %>
+    <%= form.number_field :nisa_stock %>
+  </div>
+
+  <div>
+    <%= form.label :rakuten_card %>
+    <%= form.number_field :rakuten_card %>
+  </div>
+
+  <div>
+    <%= form.label :gasoline %>
+    <%= form.number_field :gasoline %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
